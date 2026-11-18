@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Gait AI explores how ordinary walking video can become measurable movement data for gait and rehabilitation research.">
+  <meta name="theme-color" content="#f7f4ee">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Gait AI | Gait analysis from video">
+  <meta property="og:description" content="Markerless 3D pose, body mesh reconstruction, and wearable data for rehabilitation research.">
+  <title>Gait AI | Gait analysis from video</title>
+  <link rel="icon" href="assets/favicon.png" type="image/png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body id="top">
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="header">
+    <div class="shell header-inner">
+      <a class="brand" href="#top" aria-label="Gait AI home"><span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span> Gait AI</a>
+      <nav aria-label="Main navigation">
+        <a href="#platform">Platform</a>
+        <a href="#research">Research</a>
+        <a class="nav-contact" href="#contact">Contact <span aria-hidden="true">↗</span></a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="shell hero" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="dot" aria-hidden="true"></span> Rehab research · Markerless motion</p>
+        <h1 id="hero-title">A closer look at <em>how we walk.</em></h1>
+        <p class="hero-lede">Gait AI turns walking video into movement data. We’re building tools for rehabilitation researchers to study how people walk using a single camera.</p>
+        <div class="actions">
+          <a class="button primary" href="#platform">Explore the platform <span aria-hidden="true">↓</span></a>
+          <a class="text-link" href="#research">Read the research <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+      <figure class="hero-visual">
+        <img src="assets/walking-sequence.webp" alt="Three side views of a person walking, with markers illustrating how joints can be tracked through a step." width="1024" height="1024" fetchpriority="high">
+        <figcaption><span class="reticle" aria-hidden="true">⌖</span> Walking sequence illustration</figcaption>
+      </figure>
+    </section>
+
+    <section class="platform" id="platform" aria-labelledby="platform-title">
+      <div class="shell">
+        <div class="section-intro">
+          <div>
+            <p class="eyebrow">The platform</p>
+            <h2 id="platform-title">From a recording<br class="desktop-break"> to a measurement.</h2>
+          </div>
+          <p>Gait describes how a person walks. A single video gives the platform a starting point for estimating joint movement. For supported therapy sessions, wearable signals add context to what the camera sees.</p>
+        </div>
+        <div class="capabilities">
+          <article>
+            <p class="card-label">Joint movement</p>
+            <h3>3D pose estimation</h3>
+            <p>Use MotionAGFormer to estimate a 3D skeleton frame by frame and see how hip and knee angles change through a step. Export joint coordinates and angle data for further analysis.</p>
+          </article>
+          <article>
+            <p class="card-label">Body shape</p>
+            <h3>3D mesh reconstruction</h3>
+            <p>Use SAM 3D Body to estimate the body’s surface from video. Inspect the mesh across frames or export a selected frame as a 3D model.</p>
+          </article>
+          <article>
+            <p class="card-label">Therapy sessions</p>
+            <h3>Video and wearables</h3>
+            <p>Align video and wearable signals in Lokomat robotic rehabilitation sessions so researchers can review movement and physiological signals on the same timeline.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="shell research" id="research" aria-labelledby="research-title">
+      <div class="research-copy">
+        <p class="eyebrow">Research</p>
+        <h2 id="research-title">Studying gait beyond the lab.</h2>
+        <p>Motion capture labs can measure walking in detail, but regular access can be difficult. Our research asks what a single camera can measure and how those measurements compare with laboratory motion capture.</p>
+        <p>The published study compared 3D pose models on walking data from people with spinal cord injury and used VideoPose3D for its main analysis.</p>
+      </div>
+      <article class="paper">
+        <p class="eyebrow">npj Digital Medicine · 2026</p>
+        <h3>3D pose estimation for scalable remote gait kinematics assessment</h3>
+        <p>Natraj, Messmer, Fujii et al.</p>
+        <a class="text-link" href="https://www.nature.com/articles/s41746-025-02211-y">Read the open access paper <span aria-hidden="true">↗</span></a>
+      </article>
+    </section>
+
+    <section class="contact" id="contact" aria-labelledby="contact-title">
+      <div class="shell contact-inner">
+        <div>
+          <p class="eyebrow">Contact</p>
+          <h2 id="contact-title">Let’s talk about gait.</h2>
+          <p>For research questions or collaboration inquiries, find project lead Shreyasvi Natraj’s correspondence details in the published paper.</p>
+        </div>
+        <a class="button primary" href="https://www.nature.com/articles/s41746-025-02211-y#corresponding-author">Find correspondence details <span aria-hidden="true">↗</span></a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="shell footer">
+    <a class="brand" href="#top" aria-label="Gait AI, back to top"><span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span> Gait AI</a>
+    <p>Gait AI Ortho-Team project · Research software</p>
+    <p>© 2026 Shreyasvi Natraj</p>
+  </footer>
+</body>
+</html>
+
