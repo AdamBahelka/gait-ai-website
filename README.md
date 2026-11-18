@@ -10,4 +10,6 @@ Edit `docs/index.html` for page content and `docs/styles.css` for styling. Image
 
 GitHub Pages publishes the `docs/` folder from `main`. Changes pushed to that folder are deployed automatically. No build or dependency installation is needed.
 
-The homepage walking image is an AI-generated illustration. The page links to the published research and its correspondence details.
+ScAit is an early-stage platform in development for 3D pose and body mesh reconstruction from a smartphone camera. Body fat percentage, muscle percentage, and joint loading are on the research roadmap.
+
+The homepage walking image is an AI-generated illustration. The research section links to published studies on gait reconstruction and smartphone body fat estimation. Collaboration inquiries can be sent through the contact section on the website.
