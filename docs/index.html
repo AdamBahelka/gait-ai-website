@@ -3,12 +3,12 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="ScAit explores how ordinary walking video can become measurable movement data for gait and rehabilitation research.">
+  <meta name="description" content="ScAit is an early-stage platform in development, exploring 3D pose, body mesh, body composition, and joint loading from a smartphone camera.">
   <meta name="theme-color" content="#f7f4ee">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="ScAit | Gait analysis from video">
-  <meta property="og:description" content="Markerless 3D pose, body mesh reconstruction, and wearable data for rehabilitation research.">
-  <title>ScAit | Gait analysis from video</title>
+  <meta property="og:title" content="ScAit | Body insights from a smartphone camera">
+  <meta property="og:description" content="An early-stage platform in development for 3D pose and body mesh reconstruction, with body composition and joint loading on our research roadmap.">
+  <title>ScAit | Body insights from a smartphone camera</title>
   <link rel="icon" href="assets/favicon.png" type="image/png">
   <link rel="stylesheet" href="styles.css">
 </head>
@@ -20,7 +20,7 @@
       <nav aria-label="Main navigation">
         <a href="#platform">Platform</a>
         <a href="#research">Research</a>
-        <a class="nav-contact" href="#contact">Contact <span aria-hidden="true">↗</span></a>
+        <a class="nav-contact" href="#contact">Contact</a>
       </nav>
     </div>
   </header>
@@ -28,12 +28,12 @@
   <main id="main">
     <section class="shell hero" aria-labelledby="hero-title">
       <div class="hero-copy">
-        <p class="eyebrow"><span class="dot" aria-hidden="true"></span> Rehab research · Markerless motion</p>
-        <h1 id="hero-title">A closer look at <em>how we walk.</em></h1>
-        <p class="hero-lede">ScAit turns walking video into movement data. We’re building tools for rehabilitation researchers to study how people walk using a single camera.</p>
+        <p class="eyebrow">Early-stage platform · In development</p>
+        <h1 id="hero-title">A new view of <em>your body.</em></h1>
+        <p class="hero-lede">We’re developing ScAit to reconstruct 3D pose and body shape using just a smartphone camera. Our research roadmap extends to body fat percentage, muscle percentage, and the forces acting on joints.</p>
         <div class="actions">
-          <a class="button primary" href="#platform">Explore the platform <span aria-hidden="true">↓</span></a>
-          <a class="text-link" href="#research">Read the research <span aria-hidden="true">↗</span></a>
+          <a class="button primary" href="#platform">What we’re building</a>
+          <a class="text-link" href="#research">Explore the research</a>
         </div>
       </div>
       <figure class="hero-visual">
@@ -46,26 +46,31 @@
       <div class="shell">
         <div class="section-intro">
           <div>
-            <p class="eyebrow">The platform</p>
-            <h2 id="platform-title">From a recording<br class="desktop-break"> to a measurement.</h2>
+            <p class="eyebrow">What we’re building</p>
+            <h2 id="platform-title">One camera.<br class="desktop-break"> A fuller picture.</h2>
           </div>
-          <p>Gait describes how a person walks. A single video gives the platform a starting point for estimating joint movement. For supported therapy sessions, wearable signals add context to what the camera sees.</p>
+          <p>Our goal is to bring movement and body analysis to the smartphone camera. We’re building the platform around 3D pose and mesh reconstruction, while researching body composition and joint loading. The platform is at an early stage, and validating each estimate is part of the work ahead.</p>
         </div>
         <div class="capabilities">
           <article>
-            <p class="card-label">Joint movement</p>
+            <p class="card-label">In development</p>
             <h3>3D pose estimation</h3>
-            <p>Use MotionAGFormer to estimate a 3D skeleton frame by frame and see how hip and knee angles change through a step. Export joint coordinates and angle data for further analysis.</p>
+            <p>Reconstruct a 3D skeleton from smartphone video to explore posture, joint angles, and how the body moves over time.</p>
           </article>
           <article>
-            <p class="card-label">Body shape</p>
+            <p class="card-label">In development</p>
             <h3>3D mesh reconstruction</h3>
-            <p>Use SAM 3D Body to estimate the body’s surface from video. Inspect the mesh across frames or export a selected frame as a 3D model.</p>
+            <p>Recreate the body’s surface as a 3D mesh from camera footage, providing a digital representation of body shape and movement.</p>
           </article>
           <article>
-            <p class="card-label">Therapy sessions</p>
-            <h3>Video and wearables</h3>
-            <p>Align video and wearable signals in Lokomat robotic rehabilitation sessions so researchers can review movement and physiological signals on the same timeline.</p>
+            <p class="card-label">Research roadmap</p>
+            <h3>Body composition</h3>
+            <p>Investigate estimates of body fat percentage and muscle percentage from camera-based body shape models.</p>
+          </article>
+          <article>
+            <p class="card-label">Research roadmap</p>
+            <h3>Joint loading</h3>
+            <p>Explore how reconstructed movement can support biomechanical estimates of the forces acting on joints, helping us study the stress they experience.</p>
           </article>
         </div>
       </div>
@@ -74,15 +79,16 @@
     <section class="shell research" id="research" aria-labelledby="research-title">
       <div class="research-copy">
         <p class="eyebrow">Research</p>
-        <h2 id="research-title">Studying gait beyond the lab.</h2>
-        <p>Motion capture labs can measure walking in detail, but regular access can be difficult. Our research asks what a single camera can measure and how those measurements compare with laboratory motion capture.</p>
-        <p>The published study compared 3D pose models on walking data from people with spinal cord injury and used VideoPose3D for its main analysis.</p>
+        <h2 id="research-title">Research behind the vision.</h2>
+        <p>The featured paper studies single-camera 3D pose estimation for gait assessment in people with spinal cord injury. It compares estimated movement with laboratory motion capture and provides context for our work on movement reconstruction.</p>
+        <p>Related research has also investigated smartphone images for body fat estimation. ScAit’s body composition and joint-loading features are research goals that require their own validation.</p>
+        <p><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC9657201/">Read the smartphone body fat study</a> by Farina et al., published in <i>Sensors</i> (2022).</p>
       </div>
       <article class="paper">
         <p class="eyebrow">npj Digital Medicine · 2026</p>
         <h3>3D pose estimation for scalable remote gait kinematics assessment</h3>
         <p>Natraj, Messmer, Fujii et al.</p>
-        <a class="text-link" href="https://www.nature.com/articles/s41746-025-02211-y">Read the open access paper <span aria-hidden="true">↗</span></a>
+        <a class="text-link" href="https://www.nature.com/articles/s41746-025-02211-y">Read the open access paper</a>
       </article>
     </section>
 
@@ -90,19 +96,18 @@
       <div class="shell contact-inner">
         <div>
           <p class="eyebrow">Contact</p>
-          <h2 id="contact-title">Let’s talk about gait.</h2>
-          <p>For research questions or collaboration inquiries, find project lead Shreyasvi Natraj’s correspondence details in the published paper.</p>
+          <h2 id="contact-title">Let’s build what’s next.</h2>
+          <p>For questions about ScAit, research, or collaboration, contact Adam Bahelka.</p>
         </div>
-        <a class="button primary" href="https://www.nature.com/articles/s41746-025-02211-y#corresponding-author">Find correspondence details <span aria-hidden="true">↗</span></a>
+        <a class="button primary" href="mailto:abahelka@ethz.ch">abahelka@ethz.ch</a>
       </div>
     </section>
   </main>
 
   <footer class="shell footer">
     <a class="brand" href="#top" aria-label="ScAit, back to top"><span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span> ScAit</a>
-    <p>ScAit Ortho-Team project · Research software</p>
+    <p>ScAit · Early-stage platform in development</p>
     <p>© 2026 Shreyasvi Natraj</p>
   </footer>
 </body>
 </html>
-
