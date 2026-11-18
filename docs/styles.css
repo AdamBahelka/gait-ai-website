@@ -47,7 +47,6 @@ p, h1, h2, h3, figure { margin: 0; }
 .hero { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(2rem, 5vw, 5rem); align-items: center; padding-block: clamp(3rem, 6.6vw, 6.5rem); }
 .eyebrow { font-family: var(--mono); font-size: .76rem; line-height: 1.55; letter-spacing: .075em; text-transform: uppercase; font-weight: 600; }
 .hero .eyebrow { display: flex; align-items: center; gap: .65rem; color: var(--action); }
-.dot { flex: 0 0 auto; width: .5rem; height: .5rem; border-radius: 50%; background: currentColor; }
 h1, h2, .paper h3 { font-family: var(--display); font-weight: 400; letter-spacing: -.065em; }
 h1 { margin-block: 1.1rem 1.5rem; font-size: clamp(3.45rem, 6.05vw, 5.9rem); line-height: .99; text-wrap: balance; }
 h1 em { display: block; color: var(--action); font-weight: inherit; }
@@ -72,7 +71,7 @@ h1 em { display: block; color: var(--action); font-weight: inherit; }
 .section-intro > p, .research-copy > p:not(.eyebrow), .contact p:not(.eyebrow) { color: var(--copy); font-size: 1.06rem; line-height: 1.65; max-width: 37rem; }
 .section-intro .eyebrow, .research-copy .eyebrow { color: var(--action); margin-bottom: .7rem; }
 h2 { font-size: clamp(2.55rem, 5vw, 4.45rem); line-height: 1.03; }
-.capabilities { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin-top: 2.6rem; }
+.capabilities { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; margin-top: 2.6rem; }
 .capabilities article { background: var(--paper); border: 1px solid var(--line); border-radius: .4rem; padding: clamp(1rem, 2.5vw, 2rem); }
 .card-label { color: var(--action); font-family: var(--mono); font-size: .71rem; font-weight: 600; line-height: 1.4; text-transform: uppercase; letter-spacing: .03em; }
 .capabilities h3 { margin-block: .9rem .55rem; font-size: clamp(1.15rem, 1.7vw, 1.4rem); line-height: 1.25; letter-spacing: -.045em; }
