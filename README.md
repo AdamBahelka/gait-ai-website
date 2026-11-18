@@ -1,6 +1,6 @@
-# Gait AI website
+# ScAit website
 
-Public website for the Gait AI Ortho-Team project.
+Public website for the ScAit Ortho-Team project.
 
 Live site: https://adambahelka.github.io/gait-ai-website/
 
